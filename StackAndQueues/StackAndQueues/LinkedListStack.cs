@@ -6,15 +6,15 @@ namespace StackAndQueues
 {
     public class LinkedListStack
     {
-        public Node top;
+        public Node top; //starting of Stack defining position top
         public LinkedListStack()
         {
             this.top = null;
         }
-        public void push(int Value)
+        public void push(int Value)// Method of adding (add the element in stack)
         {
-            Node node = new Node(Value);
-            if(this.top==null)
+            Node node = new Node(Value);//creating the object of the node class and pushing into it
+            if (this.top==null)
             {
                 node.next = null;
             }
