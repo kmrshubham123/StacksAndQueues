@@ -25,6 +25,18 @@ namespace StackAndQueues
             }
             Console.WriteLine(node.data + " inserted into Queue");
         }
+        public void Dequeue(int data) //Delete the front item from the Queue
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is Empty");
+            }
+            else
+            {
+                Console.WriteLine(head.data + " removed from Queue");
+                head = head.next;
+            }
+        }
         public void Display() //Display  method to display the Queue
         {
             if (head == null)
@@ -39,7 +51,7 @@ namespace StackAndQueues
                     Console.Write(n.data + " ");
                     n = n.next;
                 }
-                Console.Write(n.data + "\n");
+                Console.WriteLine(n.data + " ");
             }
         }
     }

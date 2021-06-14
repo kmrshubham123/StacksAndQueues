@@ -24,6 +24,9 @@ namespace StackAndQueues
             queue.Enqueue(56);
             queue.Enqueue(30);
             queue.Enqueue(70);
+            //UC4:-Dequeue
+            Console.WriteLine("============");
+            queue.Dequeue(70);
             queue.Display();
 
         }
