@@ -7,7 +7,7 @@ namespace StackAndQueues
     public class Node
     {    // Variables
         public int data;// actual data that has to be store in list = data
-        public Node next;// refer to the next node of the list
+        public Node next;// refer to the next Element of the list
         /// <summary>
         /// constructor to initillize data
         /// </summary>

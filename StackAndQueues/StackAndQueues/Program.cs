@@ -12,6 +12,10 @@ namespace StackAndQueues
             stack.push(70);
             stack.push(30);
             stack.push(56);
+            //UC2:-pop
+            Console.WriteLine("============");
+            stack.Pop();
+            stack.Peek();
             stack.Display();
         }
     }

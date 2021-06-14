@@ -34,6 +34,35 @@ namespace StackAndQueues
                 temp = temp.next;
             }
         }
+        public void Peek() // Method to Display the top element of the stack
+        {
+            if(this.top==null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            Console.WriteLine("{0} is the top of the Stack" , this.top.data);
+        }
+        public void Pop() // Method to Remove the top most element from the stack
+        {
+            if(this.top ==null)
+            {
+                Console.WriteLine("Stack is Empty, Deletion is not possible");
+                return;
+            }
+            Console.WriteLine("Value is popped {0} " , this.top.data);
+            this.top = this.top.next;
+        }
+        public void IsEmpty()    /// check stack is empty or not.
+        {
+            while (this.top!=null)
+            {
+                Peek();
+                Pop();
+            }
+
+        }
+
     }
     
 
