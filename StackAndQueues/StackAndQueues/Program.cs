@@ -17,6 +17,15 @@ namespace StackAndQueues
             stack.Pop();
             stack.Peek();
             stack.Display();
+            //Queue========================================
+            //UC3:-Create a Queue of 56->30->70->
+            Console.WriteLine("##########################################");
+            LinkedListQueue queue = new LinkedListQueue();
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
+            queue.Display();
+
         }
     }
 }
